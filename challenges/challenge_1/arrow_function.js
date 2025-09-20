@@ -1,7 +1,7 @@
 // Convert the following code to an arrow function assigned to a getFull name variable
 const getFullName = () => userObject.firstName + " " + userObject.lastName;
 
-const userObject = {
+export const userObject = {
   firstName: "John",
   lastName: "Doe",
   age: 30,
