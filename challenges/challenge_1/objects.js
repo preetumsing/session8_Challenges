@@ -16,12 +16,9 @@ const userObject = {
     isEmployed: true,
   };
 
-// This function does not navuigate the userObject correctly
-function updateAddress(user, newStreet) {
-    user.street: newStreet;
-}
+// This function does not navigate the userObject correctly
+const updateAddress = (user, newStreet) => user.address.street = newStreet;
   
 // Fix the object property assignment.
 updateAddress(userObject, "25 Aberdeen Street");
 console.log(userObject);
-  
