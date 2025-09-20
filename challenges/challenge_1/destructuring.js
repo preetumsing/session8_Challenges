@@ -16,33 +16,33 @@ const userObject = {
   isEmployed: true,
 };
 
-// Destructure the entire userObject correctly spo that all values in the structure have a variable
+// Destructure the entire userObject correctly so that all values in the structure have a variable
 const {
   firstName,
   lastName,
   age: yearsOld,
   isStudent,
-  address,
+  address: {street, city, zipCode},
   skills,
-  socialProfiles: {},
+  socialProfiles: {twitter, linkedIn},
   isEmployed,
 } = userObject;
 
 // This doesnt look right!
-const street = address.street;
-const twitterHandle = socialProfiles.twitter;
+// const street = address.street;
+// const twitterHandle = socialProfiles.twitter;
 
 const greeting =
   "Hello, my name is " +
-  firstname +
+  firstName +
   " " +
-  lastname +
+  lastName +
   ". I am " +
   yearsOld +
   " years old, living on " +
   street +
   ". You can find me on Twitter as " +
-  twitterhandle +
+  twitter +
   ".";
 
 console.log(greeting);
