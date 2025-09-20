@@ -1,7 +1,5 @@
 // Convert the following code to an arrow function assigned to a getFull name variable
-function getFullName() {
-  return user.firstName + " " + user.lastName;
-}
+const getFullName = () => userObject.firstName + " " + userObject.lastName;
 
 const userObject = {
   firstName: "John",
@@ -22,4 +20,4 @@ const userObject = {
 };
 
 // Fix this code using an arrow function.
-console.log(getFullName(userObject));
+console.log(getFullName());
